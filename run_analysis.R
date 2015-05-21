@@ -1,14 +1,19 @@
 #Check if the Samsung directory exists, if not download and unzip the files
 cwd<-getwd()
 if(!(file.exists(paste(cwd,"/UCI HAR Dataset", sep = "")))){
-  #download.file("https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip", destfile=paste(cwd,"/SamsungData.zip", sep = ""), method="curl")
-  #unzip(paste(cwd,"/SamsungData.zip", sep = ""))
+  download.file("https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip", destfile=paste(cwd,"/SamsungData.zip", sep = ""), quiet = TRUE, method="curl")
+  unzip(paste(cwd,"/SamsungData.zip", sep = ""))
   print("Creating New Directory")
 }
 
 #Load Library
 #library (data.table)
-library (dplyr)
+var_package<-"dplyr"
+if (!require(var_package,quietly = TRUE, character.only = TRUE))
+{
+  install.packages(var_package, quiet=TRUE, dep=TRUE)
+  if(!require(var_package,character.only = TRUE)) stop("Package dplyr not found")
+}
 
 #Load Features and Activity label dataset
 var_features<-tbl_df(read.table(paste(cwd,"/UCI HAR Dataset/features.txt", sep = "")))
@@ -52,4 +57,7 @@ var_TidyDataSet1<-tbl_df(rbind(var_TestDataSet, var_TrainDataSet))
 colnames(var_TidyDataSet1)[1:2]<-c("Subject", "Activity")
 var_TidyDataSet2<-tbl_df(var_TidyDataSet1%>%group_by(Subject, Activity)%>%summarise_each(funs(mean)))
 
-write.table(var_TidyDataSet2, paste(cwd,"/TidyDataSet2.txt", sep = ""), row.name=FALSE)
+write.table(var_TidyDataSet2, paste(cwd,"/TidyDataSet2.txt", sep = ""), quote=FALSE, row.name=FALSE)
+
+#clean up files
+file.remove(paste(cwd,"/SamsungData.zip", sep = ""))
