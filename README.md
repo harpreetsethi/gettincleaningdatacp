@@ -28,7 +28,7 @@ Assuming your R invoking directory (*working directory*) has a directory structu
 
 ####Structure of the R Script
 #####Getting the files
-Script checks if there is a directory called UCI HAR Dataset in the directory from where the R session was invoked. If not it downloads the file (as SamsungData.zip) and unzips it. Please remember that this action takes place in the directory from where the R session was invoked. There has been no attempt made to change the current working directory.
+Script checks if there is a directory called UCI HAR Dataset in the directory from where the R session was invoked. If not it downloads the file (as SamsungData.zip) and unzips it. Please remember that this action takes place in the directory from where the R session was invoked (working directory). There has been no attempt made to change the current working directory. Later on when tidy data sets are stored in a physical file, their absolute paths are printed for convenience.
 
 #####Loading library
 Main data transformation package used by the R script is dplyr. The script checks if the package is installed, if yes then it loads it otherwise it tries to install and load the package. In case the install/load fails,the script stops with the message "Package dplyr not found". You will need to consult online forums to figure out the reason behind installation/load failure.
@@ -79,4 +79,4 @@ write.table has been invoked with `row.names=FALSE` as requested in the course s
 File SamsungData.zip is removed while the directory "UCI HAR Dataset" is left untouched in case the user wants to review or load the raw data.
 
 #####Code Book/Data Dictionary
-Is available in the repo titled [CodeBook.pdf](https://github.com/harpreetsethi/gettincleaningdatacp/blob/master/CodeBook.pdf)
+Is available in the repo titled [CodeBook.pdf](https://github.com/harpreetsethi/gettincleaningdatacp/blob/master/CodeBook.pdf). Code Book contains the list of columns with expanded description and some sample values. As both data sets have the same structure, the column definitions are presented only once.
