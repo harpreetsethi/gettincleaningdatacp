@@ -79,4 +79,4 @@ write.table has been invoked with `row.names=FALSE` as requested in the course s
 File SamsungData.zip is removed while the directory "UCI HAR Dataset" is left untouched in case the user wants to review or load the raw data.
 
 #####Code Book/Data Dictionary
-Is available in the repo titled CodeBook.pdf
+Is available in the repo titled [CodeBook.pdf](https://github.com/harpreetsethi/gettincleaningdatacp/blob/master/CodeBook.pdf)
