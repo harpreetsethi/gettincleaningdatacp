@@ -1,5 +1,5 @@
 ### Readme.md 
-#### Submitted as part of submission for Getting and cleaning data course work
+#### Submitted as part Getting and cleaning data course work
 
 Navigation of the useful files in the repo
 
@@ -79,4 +79,4 @@ write.table has been invoked with `row.names=FALSE` as requested in the course s
 File SamsungData.zip is removed while the directory "UCI HAR Dataset" is left untouched in case the user wants to review or load the raw data.
 
 #####Code Book/Data Dictionary
-Is available in the repo titled [CodeBook.pdf](https://github.com/harpreetsethi/gettincleaningdatacp/blob/master/CodeBook.pdf). Code Book contains the list of columns with expanded description and some sample values. As both data sets have the same structure, the column definitions are presented only once.
+Is available in the repo titled [CodeBook.pdf](https://github.com/harpreetsethi/gettincleaningdatacp/blob/master/CodeBook.pdf). Code Book contains the list of columns with expanded description and some sample values. As both tidy data sets have the same structure, the column definitions are presented only once.

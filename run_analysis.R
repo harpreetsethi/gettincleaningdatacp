@@ -59,9 +59,9 @@ var_TidyDataSet1<-tbl_df(rbind(var_TestDataSet, var_TrainDataSet))
 colnames(var_TidyDataSet1)[1:2]<-c("Subject", "Activity")
 
 #Create the file for the first tidy data set
-write.table(var_TidyDataSet2, paste(cwd,"/TidyDataSet1.txt", sep = ""), quote=FALSE, row.name=FALSE)
+write.table(var_TidyDataSet1, paste(cwd,"/TidyDataSet1.txt", sep = ""), quote=FALSE, row.name=FALSE)
 #Print message with the location of the second tidy data set
-cat (paste("Tidy Dataset file created at - ",cwd,"/TidyDataSet2.txt", sep = ""))
+cat (paste("Tidy Dataset-1 file created at - ",cwd,"/TidyDataSet1.txt\n", sep = ""))
 
 #Req 5 - Calculate the mean per subject and activity combination
 var_TidyDataSet2<-tbl_df(var_TidyDataSet1%>%group_by(Subject, Activity)%>%summarise_each(funs(mean)))
@@ -69,7 +69,7 @@ var_TidyDataSet2<-tbl_df(var_TidyDataSet1%>%group_by(Subject, Activity)%>%summar
 #Create the file for the second tidy data set
 write.table(var_TidyDataSet2, paste(cwd,"/TidyDataSet2.txt", sep = ""), quote=FALSE, row.name=FALSE)
 #Print message with the location of the second tidy data set
-cat (paste("Tidy Dataset file created at - ",cwd,"/TidyDataSet2.txt", sep = ""))
+cat (paste("Tidy Dataset-2 file created at - ",cwd,"/TidyDataSet2.txt", sep = ""))
 
 #clean up files
 if(file.exists(paste(cwd,"/SamsungData.zip", sep = "")))
