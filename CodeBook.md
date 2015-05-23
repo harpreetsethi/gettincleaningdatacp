@@ -13,7 +13,7 @@ Tidy Data Set 1 [stored in variable var_TidyDataSet1] and Tidy Data Set 2 [store
 - Data Set 1 - Column name has been changed from the raw data set to more descriptive name, changed the numeric data from the raw data set to text based and more descriptive data
 - Data Set 2 - Column name has been changed from the raw data set to more descriptive name. Changed the numeric data from the raw data set to text based and more descriptive data, used for aggregation purpose to compute mean of feature observation set
 
-####Observation Feature Set
+####Observation Feature Set (Column 3 onwards)
 
 - Data Set 1 - Column Names have been changed from the raw data set to more descriptive names
 - Data Set 2 - Column Names have been changed from the raw data set to more descriptive names, mean of the observation data was computed for every subject and activity combination
