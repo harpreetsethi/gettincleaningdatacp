@@ -32,7 +32,7 @@ colnames(var_XTest)<-var_features$V2
 var_XTestNew<-tbl_df(var_XTest[,grep(paste(var_findColStr,collapse="|"), var_features$V2,ignore.case=TRUE)])
 
 var_YTest<-tbl_df(read.table(paste(cwd,"/UCI HAR Dataset/test/y_test.txt", sep = "")))
-#Add descriptive activity names (Req#3)
+#Add descriptive activity names (Req #3)
 var_YTest<-tbl_df(mutate(var_YTest, V1=var_activityLabel[var_YTest$V1, 2]))
 
 #Create the complete test data set
@@ -47,7 +47,7 @@ colnames(var_XTrain)<-var_features$V2
 var_XTrainNew<-tbl_df(var_XTrain[,grep(paste(var_findColStr,collapse="|"), var_features$V2,ignore.case=TRUE)])
 
 var_YTrain<-tbl_df(read.table(paste(cwd,"/UCI HAR Dataset/train/y_train.txt", sep = "")))
-#Add descriptive activity names (Req#3)
+#Add descriptive activity names (Req #3)
 var_YTrain<-tbl_df(mutate(var_YTrain, V1=var_activityLabel[var_YTrain$V1, 2]))
 
 #Create the complete training data set
@@ -63,7 +63,7 @@ write.table(var_TidyDataSet1, paste(cwd,"/TidyDataSet1.txt", sep = ""), quote=FA
 #Print message with the location of the second tidy data set
 cat (paste("Tidy Dataset-1 file created at - ",cwd,"/TidyDataSet1.txt\n", sep = ""))
 
-#Req 5 - Calculate the mean per subject and activity combination
+#Req #5 - Calculate the mean per subject and activity combination
 var_TidyDataSet2<-tbl_df(var_TidyDataSet1%>%group_by(Subject, Activity)%>%summarise_each(funs(mean)))
 
 #Create the file for the second tidy data set
