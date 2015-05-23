@@ -15,8 +15,8 @@ Tidy Data Set 1 [stored in variable var_TidyDataSet1] and Tidy Data Set 2 [store
 
 ####Observation Feature Set
 
-- Data Set 1 - **Column Name**s have been changed from the raw data set to more descriptive names
-- Data Set 2 - **Column Name**s have been changed from the raw data set to more descriptive names, mean of the observation data was computed for every subject and activity combination
+- Data Set 1 - Column Names have been changed from the raw data set to more descriptive names
+- Data Set 2 - Column Names have been changed from the raw data set to more descriptive names, mean of the observation data was computed for every subject and activity combination
 
 ####Data Dictionary
 - **Column Name** - Subject	**Description** - Integer value denoting one of the subjects	**Data Type** - int	**Typical Actual Data Elements** - 1,2,3…
