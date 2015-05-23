@@ -3,7 +3,7 @@
 
 #####Navigation of the useful files in the repo
 
-1. [run_analysis.R](https://github.com/harpreetsethi/gettincleaningdatacp/blob/master/run_analysis.R) - main R script with the course submission code. If a code statement directly satisfies one or more of the course submission requirements you will find the text Req #X (where X is the course submission requirement number) before the statement. 
+1. [run_analysis.R](https://github.com/harpreetsethi/gettincleaningdatacp/blob/master/run_analysis.R) - main R script with the course submission code. If a code statement directly satisfies one or more of the course submission requirements you will find the text ***Req #X*** (where **X** is the course submission requirement number) before the statement. 
 
 2. [TidyDataSet1.txt](https://github.com/harpreetsethi/gettincleaningdatacp/blob/master/TidyDataSet1.txt)/[TidyDataSet2.txt](https://github.com/harpreetsethi/gettincleaningdatacp/blob/master/TidyDataSet2.txt) - Extract of the first and second tidy data set
 
