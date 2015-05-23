@@ -78,3 +78,8 @@ File SamsungData.zip is removed while the directory "UCI HAR Dataset" is left un
 
 #####Code Book/Data Dictionary
 Is available in the repo titled [CodeBook.pdf](https://github.com/harpreetsethi/gettincleaningdatacp/blob/master/CodeBook.pdf). Code Book contains the list of columns with expanded description and some sample values. As both tidy data sets have the same structure, the column definitions are presented only once.
+
+#####References
+Hood, D. (2015). David's personal course project FAQ. [Blog] Forum for Getting and Cleaning Data. Available at: https://class.coursera.org/getdata-014/forum/thread?thread_id=30 [Accessed 23 May 2015].
+
+Wickham, H. (2015). Tidy Data. [online] had.co.nz. Available at: http://vita.had.co.nz/papers/tidy-data.pdf [Accessed 23 May 2015].
