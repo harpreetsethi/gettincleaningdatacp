@@ -5,13 +5,13 @@ Tidy Data Set 1 [stored in variable var_TidyDataSet1] and Tidy Data Set 2 [store
 ###Transformations
 ####Subject
 
-- Data Set 1 - None
-- Data Set 2 - Used for aggregation purpose to compute mean of feature observation set
+- Data Set 1 - Column name has been changed from the raw data set to more descriptive name
+- Data Set 2 - Column name has been changed from the raw data set to more descriptive name. Used for aggregation purpose to compute mean of feature observation set
 
 ####Activity
 
-- Data Set 1 - Changed the numeric data from the raw data set to text based and more descriptive data
-- Data Set 2 - Changed the numeric data from the raw data set to text based and more descriptive data, used for aggregation purpose to compute mean of feature observation set
+- Data Set 1 - Column name has been changed from the raw data set to more descriptive name, changed the numeric data from the raw data set to text based and more descriptive data
+- Data Set 2 - Column name has been changed from the raw data set to more descriptive name. Changed the numeric data from the raw data set to text based and more descriptive data, used for aggregation purpose to compute mean of feature observation set
 
 ####Observation Feature Set
 
