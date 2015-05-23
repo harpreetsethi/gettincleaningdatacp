@@ -70,7 +70,7 @@ For the ease of the user running the script the first dataset is stored in the w
 
 Second tidy data set is created by summarizing (`summarise_each` command is used) the observations for the chosen features for a combination of *subject and activity*. Result is then stored in a text file named "TidyDataSet2.txt" which will be created in the same directory where R session was invoked from (it is also part of this repository). 
 
-write.table has been invoked with `row.names=FALSE` as requested in the course submission process. `quote=FALSE` option is used so that column names do not have quotes around them, making it easier for the user to reload the file. A message is printed on the prompt stating the location where the file was created.
+write.table has been invoked with `row.names=FALSE` as requested in the course submission process. `quote=FALSE` option is used so that column names do not have quotes around them, making it easier for the user to reload the file. A message is printed on the prompt stating the location where the file was created. A small snippet of the tidy data set is also printed on the prompt, as the tidy data set variable was created using the `tbl_df` function, only a succinct summary is printed. 
 
 #####Final Cleanup
 

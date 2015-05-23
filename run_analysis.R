@@ -69,7 +69,11 @@ var_TidyDataSet2<-tbl_df(var_TidyDataSet1%>%group_by(Subject, Activity)%>%summar
 #Create the file for the second tidy data set
 write.table(var_TidyDataSet2, paste(cwd,"/TidyDataSet2.txt", sep = ""), quote=FALSE, row.name=FALSE)
 #Print message with the location of the second tidy data set
-cat (paste("Tidy Dataset-2 file created at - ",cwd,"/TidyDataSet2.txt", sep = ""))
+cat (paste("Tidy Dataset-2 file created at - ",cwd,"/TidyDataSet2.txt\n", sep = ""))
+
+cat ("Here is a snippet of the Tidy Dataset-2\n\n")
+print(var_TidyDataSet2)
+
 
 #clean up files
 if(file.exists(paste(cwd,"/SamsungData.zip", sep = "")))
