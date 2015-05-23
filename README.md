@@ -7,7 +7,7 @@ Navigation of the useful files in the repo
 
 2. run_analysis.html - html markdown extract of the above R script (added primarily for ease of read)
 
-3. TidyDataSet2.txt - Extract of the second tidy data set
+3. TidyDataSet1.txt/TidyDataSet2.txt - Extract of the first and second tidy data set
 
 #####Script build and test environment
 
