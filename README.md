@@ -1,13 +1,11 @@
 ### Readme.md 
-#### Submitted as part Getting and cleaning data course work
+#### Submitted as part of Getting and cleaning data course work
 
 #####Navigation of the useful files in the repo
 
-1. run_analysis.R - main R script with the course submission code
+1. [run_analysis.R](https://github.com/harpreetsethi/gettincleaningdatacp/blob/master/run_analysis.R) - main R script with the course submission code
 
-2. run_analysis.html - html markdown extract of the above R script (added primarily for ease of read)
-
-3. TidyDataSet1.txt/TidyDataSet2.txt - Extract of the first and second tidy data set
+2. TidyDataSet1.txt/TidyDataSet2.txt - Extract of the first and second tidy data set
 
 #####Script build and test environment
 
