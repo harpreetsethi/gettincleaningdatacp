@@ -1,7 +1,7 @@
 ### Readme.md 
 #### Submitted as part Getting and cleaning data course work
 
-Navigation of the useful files in the repo
+#####Navigation of the useful files in the repo
 
 1. run_analysis.R - main R script with the course submission code
 
