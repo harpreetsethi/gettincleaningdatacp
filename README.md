@@ -56,7 +56,7 @@ and then replace the number with the activity name. This covers requirement 3 of
 
 Similar steps have been taken to load and transform the training data.
 
-#####Merging the two data sets to form first tidy data set (requirement 1 of course submission)
+#####Merging the two data sets to form first data set (requirement 1 of course submission)
 
 rbind command is used to bind the training and test data sets. Data is joined row wise to create a data set corresponding to feature observations pertinent to a *subject and activity* combination. 
 There will be one row from training and one from test for a *subject/activity* combination. 
@@ -66,7 +66,7 @@ The other option was to merge the data column wise but that would have created *
 
 There is no **explicit** requirement to **demarcate** or uniquely identify training and test data and hence no measures have been made to do so either. Refer to the thread [here](https://class.coursera.org/getdata-014/forum/thread?thread_id=218 "here") (you may have to log in to view the discussion) for more details. And there is no **explicit** requirement to de-duplicate the data set set either, hence no such measures are taken.
 
-For the ease of the user running the script the first tidy dataset is stored in the working directory. A message is printed on the prompt stating the location where the file was created.
+For the ease of the user running the script the first dataset is stored in the working directory (although this was not a specific requirement). A message is printed on the prompt stating the location where the file was created.
 
 #####Creating the second tidy data set
 

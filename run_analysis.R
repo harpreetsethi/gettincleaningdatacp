@@ -7,8 +7,8 @@ if(!(file.exists(paste(cwd,"/UCI HAR Dataset", sep = "")))){
 
 if(!(file.exists(paste(cwd,"/UCI HAR Dataset", sep = ""))))
   stop("Cannot find data")
+
 #################Load Library
-#library (data.table)
 var_package<-"dplyr"
 if (!require(var_package,quietly = TRUE, character.only = TRUE))
 {
@@ -20,7 +20,7 @@ if (!require(var_package,quietly = TRUE, character.only = TRUE))
 var_features<-tbl_df(read.table(paste(cwd,"/UCI HAR Dataset/features.txt", sep = "")))
 var_activityLabel<-read.table(paste(cwd,"/UCI HAR Dataset/activity_labels.txt", sep = ""))
 
-#Create Match String
+#Create Match String to find the columns that have the phrase mean and std (for standard deviation in them)
 var_findColStr<-c("mean", "std")
 
 #################Load Test Data
